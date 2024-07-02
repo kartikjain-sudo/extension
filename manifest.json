@@ -3,30 +3,16 @@
     "name": "Timer",
     "version": "0.1.0",
     "description": "Save your time by analyzing your activity",
-    "permissions": ["storage", "tabs", "activeTab", "<all_urls>", "declerativeNetRequest", "notifications", "http://*/*", "https://*/*", "contextMenus", "alarms"],
-    "host_permissions": ["*"],
+    "permissions": ["storage", "tabs", "activeTab", "notifications", "contextMenus", "alarms", "scripting"],
     "background": {
       "service_worker": "background.js"
     },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["contentScript.js"],
-        "run_at": "document_start"
-      }
-    ],
     "icons": {
       "48": "icons/stopwatch.png"
     },
-    "web_accessible_resources": [
-      {
-        "resources": [],
-        "matches": []
-      }
-    ],
     "action": {
-      "default_icon": {      },
-      "default_title": "Timer",
-      "default_popup": "popup.html"
+      "default_icon": {
+        "48": "icons/stopwatch.png"
+      }
     }
 }

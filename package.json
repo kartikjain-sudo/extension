@@ -1,0 +1,11 @@
+{
+  "name": "time-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kartikjain-sudo/extension.git",
+  "author": "kartikjn <kartikjain42@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-types": "^0.1.290"
+  }
+}
